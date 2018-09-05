@@ -10,7 +10,13 @@ class Meal(models.Model):
     prep_time = models.DurationField(default=timedelta(minutes=10))
     vegeterian = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.meal_name
+
 
 class Ingredient(models.Model):
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE)
     ingredient_name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.ingredient_name
