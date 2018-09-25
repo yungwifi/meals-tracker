@@ -17,4 +17,10 @@ def index(request):
         serializer = MealSerializer(meal_list, many=True)
         return JsonResponse(serializer.data, safe=False)
 
-        
+
+def show(request, id):
+
+    if request.method == 'GET':
+        meal = Meal.objects.get(id=id)
+        serializer = MealSerializer(meal, many=True)
+        return JsonResponse(serializer.data, safe=False)
