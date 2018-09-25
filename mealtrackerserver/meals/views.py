@@ -2,8 +2,19 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from django.http import HttpResponse
+from meals.models import Meal
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+from meals.serializers import MealSerializer
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+
+    if request.method == 'GET':
+        meal_list = Meal.objects.all()
+        serializer = MealSerializer(meal_list, many=True)
+        return JsonResponse(serializer.data, safe=False)
+
+        
