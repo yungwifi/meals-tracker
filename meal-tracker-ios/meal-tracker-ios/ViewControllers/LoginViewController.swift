@@ -21,6 +21,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         if let data = UserDefaults.standard.data(forKey: "user") {
             didLogin(userData: data)
         }
+        
     }
     
     /*Perform actions when the return key is pressed*/
@@ -55,6 +56,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+
     /*User login was successful
      - we segue to homepage and initialize User.current*/
     func didLogin(userData:Data) {

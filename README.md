@@ -6,7 +6,8 @@ To run the app clone the repo down to your machine,
 
 cd into meal-tracker-ios and install the dependencies using CoCoaPods 
 
-'pod install' 
+```pod install
+``` 
 
 # Server 
 
@@ -19,4 +20,6 @@ source venv/bin/activate
 
 then install dependencies 
 
-`install requirements.txt`
+```
+install requirements.txt
+```

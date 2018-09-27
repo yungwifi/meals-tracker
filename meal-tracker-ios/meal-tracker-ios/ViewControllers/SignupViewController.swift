@@ -44,8 +44,8 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
                     } catch {
                         Helper.showAlert(viewController: self,title: "Oops!",message: error.localizedDescription)
                     }
-                case 401:
-                    Helper.showAlert(viewController: self, title: "Oops", message: "Username Taken")
+                case 403:
+                    Helper.showAlert(viewController: self, title: "Im Sorry", message: "\(username) Is Already Taken")
                 default:
                     Helper.showAlert(viewController: self, title: "Oops", message: "Unexpected Error")
                 }
