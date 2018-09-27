@@ -12,8 +12,10 @@ cd into meal-tracker-ios and install the dependencies using CoCoaPods
 
 cd into mealtrackerserver and set up your enviornment 
 
-```virtualenv venv 
-source venv/bin/activate``` 
+```
+virtualenv venv 
+source venv/bin/activate
+``` 
 
 then install dependencies 
 
