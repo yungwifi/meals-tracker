@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-//import Alamofire
+import Alamofire
 
 class SignupViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var usernameTextField:UITextField!
@@ -31,7 +31,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
     /*Signup with username and password*/
     func signUp(username:String,password:String) {
         let params = ["username":username,"password":password] as [String:Any]
-        Alamofire.request(API_HOST+"/auth/signup",method:.post,parameters:params).responseData
+        Alamofire.request(API_HOST+"/user/signup/",method:.post,parameters:params).responseData
             { response in switch response.result {
             case .success(let data):
                 switch response.response?.statusCode ?? -1 {
@@ -40,7 +40,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
                         User.current = try JSONDecoder().decode(User.self, from: data)
                         self.usernameTextField.text = ""
                         self.passwordTextField.text = ""
-                        self.performSegue(withIdentifier: "signupToInbox", sender: nil)
+                        self.performSegue(withIdentifier: "signUpToHome", sender: nil)
                     } catch {
                         Helper.showAlert(viewController: self,title: "Oops!",message: error.localizedDescription)
                     }

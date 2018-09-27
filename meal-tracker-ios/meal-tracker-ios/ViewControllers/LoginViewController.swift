@@ -38,7 +38,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     /*Login with username and password*/
     func login(username:String,password:String) {
         let params = ["username":username,"password":password] as [String:Any]
-        Alamofire.request(API_HOST+"/auth/login",method:.post,parameters:params).responseData
+        Alamofire.request(API_HOST+"/user/login/",method:.post,parameters:params).responseData
             { response in switch response.result {
             case .success(let data):
                 switch response.response?.statusCode ?? -1 {
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     /*User login was successful
-     - we segue to inbox and initialize User.current*/
+     - we segue to homepage and initialize User.current*/
     func didLogin(userData:Data) {
         do {
             //decode data into user object
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             usernameTextField.text = ""
             passwordTextField.text = ""
             self.view.endEditing(false)
-            self.performSegue(withIdentifier: "loginToInbox", sender: nil)
+            self.performSegue(withIdentifier: "logInToHome", sender: nil)
         } catch {
             Helper.showAlert(viewController: self,title: "Oops!",message: error.localizedDescription)
         }
