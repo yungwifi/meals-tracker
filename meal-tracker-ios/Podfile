@@ -6,5 +6,8 @@ target 'meal-tracker-ios' do
   use_frameworks!
 
   # Pods for meal-tracker-ios
+    pod 'Starscream','~> 3.0.4'
+    pod 'MessageKit','~> 0.13.1'
+    pod 'Alamofire','~> 4.7.0'
 
 end

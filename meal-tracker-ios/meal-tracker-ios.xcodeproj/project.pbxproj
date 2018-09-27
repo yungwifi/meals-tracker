@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CD43F395ECDAAF80D6B42BD /* Pods_meal_tracker_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F91A79492F317FD1F5F684A /* Pods_meal_tracker_ios.framework */; };
+		843734F9215C5B7500473240 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843734F8215C5B7500473240 /* Helper.swift */; };
+		843734FB215C5B9400473240 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843734FA215C5B9400473240 /* Constants.swift */; };
 		8498FA592140874E007359C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498FA582140874E007359C1 /* AppDelegate.swift */; };
 		8498FA5B2140874E007359C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498FA5A2140874E007359C1 /* ViewController.swift */; };
 		8498FA5E2140874F007359C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8498FA5C2140874F007359C1 /* Main.storyboard */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1363415AC81328EAB4ADB305 /* Pods-meal-tracker-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meal-tracker-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meal-tracker-ios/Pods-meal-tracker-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		843734F8215C5B7500473240 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		843734FA215C5B9400473240 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8498FA552140874E007359C1 /* meal-tracker-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meal-tracker-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8498FA582140874E007359C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8498FA5A2140874E007359C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		8498FA702140A0B8007359C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8498FA732140A0ED007359C1 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		8498FA752140A10F007359C1 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		8F91A79492F317FD1F5F684A /* Pods_meal_tracker_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meal_tracker_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECD0C70638CBD915B153179 /* Pods-meal-tracker-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meal-tracker-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-meal-tracker-ios/Pods-meal-tracker-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD43F395ECDAAF80D6B42BD /* Pods_meal_tracker_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4538FEB2545BF9F85C29BDD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1363415AC81328EAB4ADB305 /* Pods-meal-tracker-ios.debug.xcconfig */,
+				9ECD0C70638CBD915B153179 /* Pods-meal-tracker-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8498FA4C2140874E007359C1 = {
 			isa = PBXGroup;
 			children = (
 				8498FA572140874E007359C1 /* meal-tracker-ios */,
 				8498FA562140874E007359C1 /* Products */,
+				4538FEB2545BF9F85C29BDD9 /* Pods */,
+				962D1238DF1AF4C51E8EF846 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +93,8 @@
 				8498FA6121408750007359C1 /* LaunchScreen.storyboard */,
 				8498FA6421408750007359C1 /* Info.plist */,
 				8498FA6A21409F0B007359C1 /* API.swift */,
+				843734F8215C5B7500473240 /* Helper.swift */,
+				843734FA215C5B9400473240 /* Constants.swift */,
 			);
 			path = "meal-tracker-ios";
 			sourceTree = "<group>";
@@ -95,6 +117,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		962D1238DF1AF4C51E8EF846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F91A79492F317FD1F5F684A /* Pods_meal_tracker_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8498FA6721408750007359C1 /* Build configuration list for PBXNativeTarget "meal-tracker-ios" */;
 			buildPhases = (
+				72DBDCBD95D6E6A9E61E6E74 /* [CP] Check Pods Manifest.lock */,
 				8498FA512140874E007359C1 /* Sources */,
 				8498FA522140874E007359C1 /* Frameworks */,
 				8498FA532140874E007359C1 /* Resources */,
+				8FD6075303027A8CDA467E97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +193,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72DBDCBD95D6E6A9E61E6E74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meal-tracker-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD6075303027A8CDA467E97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-meal-tracker-ios/Pods-meal-tracker-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meal-tracker-ios/Pods-meal-tracker-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8498FA512140874E007359C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -173,6 +248,8 @@
 				8498FA6B21409F0B007359C1 /* API.swift in Sources */,
 				8498FA712140A0B8007359C1 /* LoginViewController.swift in Sources */,
 				8498FA592140874E007359C1 /* AppDelegate.swift in Sources */,
+				843734F9215C5B7500473240 /* Helper.swift in Sources */,
+				843734FB215C5B9400473240 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +391,7 @@
 		};
 		8498FA6821408750007359C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1363415AC81328EAB4ADB305 /* Pods-meal-tracker-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +410,7 @@
 		};
 		8498FA6921408750007359C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ECD0C70638CBD915B153179 /* Pods-meal-tracker-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
